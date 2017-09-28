@@ -11,7 +11,7 @@ public class TeamCounter
         int finalScore = 0;
         for (int i = 1;i < team.size();i++) // ignore team number
         {
-            finalScore += Main.playersScores.get(team.get(i));
+            finalScore += Main.getPlayersScoresUnmodifiable().get(team.get(i));
         }
         return finalScore;
     }
